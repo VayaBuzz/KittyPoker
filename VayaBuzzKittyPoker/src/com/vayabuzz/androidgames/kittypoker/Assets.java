@@ -22,7 +22,7 @@ public class Assets {
     public static Pixmap numbersPlus;
     public static Pixmap pause;
     public static Pixmap resumeExit;
-    //public static Pixmap gameOver;
+    //public static Pixmap gameOver;   
 
     public static Pixmap hands;
     public static Pixmap exampleHands;
