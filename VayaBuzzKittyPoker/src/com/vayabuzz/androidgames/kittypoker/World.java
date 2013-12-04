@@ -2,20 +2,22 @@ package com.vayabuzz.androidgames.kittypoker;
 
 // This class initializes KittyPoker's poker table
 
-public class World {
+// Here are some new comments to test git!!! //
+
+public final class World {
     public interface WorldListener {
         public void purr();
         public void stopPurr();
     }
     
-    public WorldStateEnum state;
-    public Deck deck; // Deck of 52 cards
+    public WorldStateEnum state;   // TO-DO: making private causes errors. See if you can update this.
+    private Deck deck; // Deck of 52 cards
     public Hand hand; // = new Hand(deck);    // abstract the hand (array of 5 cards) to a new class
 
     public int score = 0; // gotta give 'em some time to start with. Negative scores are allowed.
     int winAmount = 0; // how much is won in a particular round of cards
     
-    public int bet = 1; // not used at this time
+    private int bet = 1; // not used at this time
 
     public boolean gameOver = false;
     
